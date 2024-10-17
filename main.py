@@ -14,12 +14,10 @@ def worker_thread(search_key):
     del image_scraper
 
 if __name__ == "__main__":
-    #Define file path
     webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
     image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
 
-    #Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-    search_keys = list(set(["algae blooms", "lakes"]))
+    search_keys = list(set(["soccer balls"]))
 
     #Parameters
     number_of_images = 200                # Desired number of images
